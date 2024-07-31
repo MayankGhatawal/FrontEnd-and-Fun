@@ -17,7 +17,7 @@ video{
     top: 0;
     left: 0;
     z-index: -99;
-    filter: brightness(95%);
+    filter: brightness(90%);
 }
 
 .main{
@@ -48,4 +48,11 @@ video{
     font-size: 1rem;
     color: aqua;
     text-shadow: 4px 4px 7px 7px #ffffff77;
+    transition: 0.5s;
+}
+
+.main button:hover{
+    /* background: linear-gradient(to right, #ad5604 0%,#fe9d01 82%); */
+    color: white;
+    box-shadow: inset 1px 2px 8px #ff030377;
 }
