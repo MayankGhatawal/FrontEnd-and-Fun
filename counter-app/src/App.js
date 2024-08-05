@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 
 function App(){
@@ -9,6 +9,10 @@ function App(){
   function Decrement(){
     setCounter(counter - 1)
   }
+
+  useEffect(()=>{
+    document.title = counter
+  }, [counter])
   return(
     <>
         <div className='for'>
