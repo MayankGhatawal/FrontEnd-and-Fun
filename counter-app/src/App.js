@@ -7,12 +7,12 @@ function App(){
     setCounter(counter + 1)
   }
   function Decrement(){
-    setCounter(counter - 1)
+    setCounter(counter - 1);
   }
 
   useEffect(()=>{
     document.title = counter
-  }, [counter])
+  }, [counter]);
   return(
     <>
         <div className='for'>
